@@ -33,8 +33,13 @@ const Contact = () => {
     //   }),
     // });
 
+    const url =
+      process.env.NODE_ENV === "production"
+        ? "https://techie-dishant.herokuapp.com"
+        : "";
+
     // const data = await res.json();
-    const res = await axios.post("/contact", {
+    const res = await axios.post(`${url}/contact`, {
       name,
       email,
       phone,

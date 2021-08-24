@@ -29,7 +29,12 @@ const Feedback = () => {
     //   }),
     // });
 
-    const res = await axios.post("/feedback", {
+    const url =
+      process.env.NODE_ENV === "production"
+        ? "https://techie-dishant.herokuapp.com"
+        : "";
+
+    const res = await axios.post(`${url}/feedback`, {
       name,
       description,
     });
