@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +40,128 @@
     transform: rotate(360deg);
   }
 }
+
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #282c34; */
+  padding: 10px 5px;
+  background-color: azure;
+}
+.nav-items {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+.mheading {
+  margin-left: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #282c34;
+}
+
+.main-form {
+  background-color: beige;
+  margin: 20px 0px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 10px 20px black;
+}
+
+.des {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.deslabel {
+  flex-basis: 15%;
+}
+.inp {
+  flex-basis: 70%;
+  width: 80%;
+  margin: 10px 40px;
+  padding: 10px;
+}
+textarea {
+  margin-left: auto;
+  width: auto;
+}
+.bce {
+  margin: auto;
+  text-align: center;
+}
+
+.displayff {
+  display: flex;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 9px;
+  font-size: 15px;
+  background-color: gold;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+  .df {
+    display: block;
+  }
+  .mheading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .navdes {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.dflexs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 30px;
+  background: beige;
+  box-shadow: 10px 10px 30px black;
+  text-align: center;
+}
+.text1 {
+  font-size: medium;
+}
+
+/* .navigation {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: coral;
+}
+
+@media screen and (max-width: 500px) {
+  .navigation {
+    display: block;
+  }
+} */
+
+/* .navigation:focus-within,.navigation:focus{} */
