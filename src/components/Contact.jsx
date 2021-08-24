@@ -36,7 +36,7 @@ const Contact = () => {
     const url =
       process.env.NODE_ENV === "production"
         ? "https://techie-dishant.herokuapp.com"
-        : "";
+        : "http://localhost:5000";
 
     // const data = await res.json();
     const res = await axios.post(`${url}/contact`, {
@@ -113,7 +113,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          <button type="submit" className="bce displayff" sonClick={SendData}>
+          <button type="submit" className="bce displayff" onClick={SendData}>
             Send
           </button>
         </form>

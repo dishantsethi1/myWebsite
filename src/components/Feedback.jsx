@@ -32,7 +32,7 @@ const Feedback = () => {
     const url =
       process.env.NODE_ENV === "production"
         ? "https://techie-dishant.herokuapp.com"
-        : "";
+        : "http://localhost:5000";
 
     const res = await axios.post(`${url}/feedback`, {
       name,
