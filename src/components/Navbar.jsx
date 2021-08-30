@@ -53,7 +53,7 @@ const Navbar = () => {
       </nav> */}
       <div className="df">
         <NavLink to="/" className="mheading">
-          <div className="mheading">Techie Dishant </div>
+          <div className="mheading1">Techie Dishant </div>
         </NavLink>
         <div className="navdes">
           <NavLink to="/about" className="nav-items">
