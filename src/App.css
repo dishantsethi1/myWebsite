@@ -61,7 +61,12 @@
   padding: 10px 5px;
   background-color: #f7b904;
 }
-
+input {
+  color: black;
+}
+textarea {
+  color: black;
+}
 .nav-items {
   margin: 0px 15px;
   text-decoration: none;
@@ -106,6 +111,7 @@
   margin-right: auto;
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 .formc {
   margin-top: 50px;
@@ -196,6 +202,7 @@ textarea {
   }
   .main-form {
     margin-bottom: 30px;
+    color: black;
   }
   .navdes {
     display: flex;
