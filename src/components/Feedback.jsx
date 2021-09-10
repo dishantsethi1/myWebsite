@@ -34,7 +34,7 @@ const Feedback = () => {
           ? "https://techie-dishant.herokuapp.com"
           : "http://localhost:5000";
 
-      const res = await axios.post(`${url}/feedback`, {
+      await axios.post(`${url}/feedback`, {
         name,
         description,
       });

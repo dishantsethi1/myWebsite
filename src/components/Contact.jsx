@@ -39,7 +39,7 @@ const Contact = () => {
           : "http://localhost:5000";
 
       // const data = await res.json();
-      const res = await axios.post(`${url}/contact`, {
+      await axios.post(`${url}/contact`, {
         name,
         email,
         phone,
