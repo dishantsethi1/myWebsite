@@ -56,7 +56,7 @@ const Contact = () => {
       history.push("/");
     } catch (err) {
       if (err.response || err.response.status)
-        if (err.response.status === 422) {
+        if (err.response.status === 400) {
           return window.alert("please fill the form fully");
         }
       return window.alert("please fill the fully ");
