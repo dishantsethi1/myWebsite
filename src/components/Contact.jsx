@@ -32,25 +32,20 @@ const Contact = () => {
     //     description,
     //   }),
     // });
+    try {
+      const url =
+        process.env.NODE_ENV === "production"
+          ? "https://techie-dishant.herokuapp.com"
+          : "http://localhost:5000";
 
-    const url =
-      process.env.NODE_ENV === "production"
-        ? "https://techie-dishant.herokuapp.com"
-        : "http://localhost:5000";
+      // const data = await res.json();
+      const res = await axios.post(`${url}/contact`, {
+        name,
+        email,
+        phone,
+        description,
+      });
 
-    // const data = await res.json();
-    const res = await axios.post(`${url}/contact`, {
-      name,
-      email,
-      phone,
-      description,
-    });
-
-    const data = res.data;
-
-    if (res.status === 422 || !data) {
-      window.alert("please fill form properly");
-    } else {
       window.alert("done sir ");
       setUser({
         name: "",
@@ -59,6 +54,12 @@ const Contact = () => {
         description: "",
       });
       history.push("/");
+    } catch (err) {
+      if (err.response || err.response.status)
+        if (err.response.status === 422) {
+          return window.alert("please fill the form fully");
+        }
+      return window.alert("please fill the fully ");
     }
   };
   return (
